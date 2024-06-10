@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Meelar SRL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header logo">
+            <picture>
+                <img src="../../img/logoMeelar2.svg" alt="logo" class="container logo__img">
+            </picture>
+            
+            <nav class="header nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#meelar">MEELAR</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#pacientes">Pacientes</a></li>                    
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Bienvenidos a nuestra Clínica</h2>
+            <p>Ofrecemos atención especializada para tu bienestar mental.</p>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="service">
+                <h3>Terapia Individual</h3>
+                <p>Atención personalizada para ayudarte a superar tus desafíos emocionales.</p>
+            </div>
+            <div class="service">
+                <h3>Terapia de Pareja</h3>
+                <p>Mejora la comunicación y la relación con tu pareja.</p>
+            </div>
+            <div class="service">
+                <h3>Consultas Psiquiátricas</h3>
+                <p>Evaluaciones y tratamiento de trastornos mentales.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo de profesionales dedicados a brindar la mejor atención en salud mental. Nuestra misión es ofrecer un espacio seguro y acogedor para nuestros pacientes.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Clínica de Salud Mental. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para actualizar automáticamente el año
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

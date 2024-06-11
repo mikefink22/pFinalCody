@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Meelar SRL</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header logo">
             <picture>
                 <img src="../../img/logoMeelar250.png" alt="logo" class="container logo__img">
             </picture>
-            
+
             <nav class="header nav">
                 <ul>
                     <li><a href="../../index.html">Inicio</a></li>
                     <li><a href="../main/index.html" class="active">MEELAR</a></li>
                     <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="/pages/main/obras-sociales.html" target="_blank">Obras Sociales</a></li>                    
+                    <li><a href="/pages/main/obras-sociales.html" target="_blank">Obras Sociales</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
                 <img src="/../../img/icon-hamburger.svg" alt="hamburguer" class="nav__hamburguer">
@@ -27,7 +30,7 @@
     </header>
 
     <section id="hero">
-        <div class="container">
+        <div class="container hero">
             <h2>Bienvenidos a nuestra Clínica</h2>
             <p>Ofrecemos atención especializada para tu bienestar mental.</p>
         </div>
@@ -40,26 +43,43 @@
                 <h3>Terapia Individual</h3>
                 <p>Atención personalizada para ayudarte a superar tus desafíos emocionales.</p>
             </div>
-            <div class="service">
-                <h3>Terapia de Pareja</h3>
-                <p>Mejora la comunicación y la relación con tu pareja.</p>
-            </div>
+
             <div class="service">
                 <h3>Consultas Psiquiátricas</h3>
                 <p>Evaluaciones y tratamiento de trastornos mentales.</p>
             </div>
+
+            <div class="service">
+                <h3>Neurología</h3>
+                <p>Estudio y tratamiento de los trastornos del sistema nervioso, que pueden influir en el
+                    bienestar psicológico y emocional de una persona.</p>
+            </div>
+
+            <div class="service">
+                <h3>Hospital de Día Lumen</h3>
+                <p>Busca brindar tratamiento ambulatorio a pacientes con patologías en salud mental, que requieren
+                    atención oportuna, mayor contención y seguimiento; sin criterio de internación.</p>
+            </div>
+
+            <div class="service">
+                <h3>Centro Ambulatorio de Adicciones - Centam</h3>
+                <p>Terapias grupales e individuales, con la finalidad de reforzar el avance psicológico y evitar
+                    recaídas.</p>
+            </div>
+
         </div>
     </section>
 
     <section id="nosotros">
-        <div class="container">
+        <div class="container nosotros">
             <h2>Sobre Nosotros</h2>
-            <p>Somos un equipo de profesionales dedicados a brindar la mejor atención en salud mental. Nuestra misión es ofrecer un espacio seguro y acogedor para nuestros pacientes.</p>
+            <p>Somos un equipo de profesionales dedicados a brindar la mejor atención en salud mental. Nuestra misión es
+                ofrecer un espacio seguro y acogedor para nuestros pacientes.</p>
         </div>
     </section>
 
     <section id="contacto">
-        <div class="container">
+        <div class="container contacto">
             <h2>Contacto</h2>
             <form>
                 <label for="nombre">Nombre:</label>
@@ -77,8 +97,39 @@
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; <span id="year"></span> Clínica Neuropática Privada Meelar SRL. Todos los derechos reservados.</p>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../../img/Logo-MEELARBlanco.svg" alt="Logo del sitio">
+            </div>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Sobre Nosotros</h3>
+                    <p>Descripción sobre la clínica y su misión.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <p>Descripción de los servicios ofrecidos por la clínica.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <p>Descripción de cómo contactarnos y ubicación.</p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.google.com/maps" target="_blank">
+                    <i class="bi bi-geo-alt"></i>
+                </a>
+            </div>
+        </div>
+        </footer>
+        <div class="footer-year">
+            <p class="footer-paragraph">&copy; <span id="year"></span> Clínica Neuropática Privada Meelar SRL. Todos los derechos reservados.</p>
         </div>
     </footer>
 
@@ -87,4 +138,5 @@
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
+
 </html>

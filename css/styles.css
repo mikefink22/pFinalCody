@@ -63,8 +63,20 @@ body{
     margin: 10px auto;
     justify-content: space-evenly;
     align-items: center;
+        
+}
+
+.link a{
+    width: fit-content;
+    border: solid white 1px;
+    padding: 10px;
+    border-radius: 10px;
     
-    
+}
+
+.link a:hover, a.active{
+    columns: var(--color1);
+    text-decoration: underline;
 }
 
 .turnos{

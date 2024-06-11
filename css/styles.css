@@ -22,7 +22,7 @@ body{
     display: flex;
     flex-direction: column;
     /* background-color: var(--color1); */    
-    max-width: 2560px;
+    max-width: 1440px;
     width: 100%;
     height: 100vh;
     justify-content: center;
@@ -70,7 +70,7 @@ body{
 .turnos{
     border: solid white 1px;
     border-radius: 20px;
-    width: 320px;
+    width: 90%;
     padding: 15px;
     margin: 10px;
     align-self: center;
@@ -79,21 +79,30 @@ body{
 .pagWeb{
     border: solid white 1px;
     border-radius: 20px;
-    width: 320px;
+    width: 90%;
     padding: 15px;
     margin: 10px;
     align-self: center;
 }
 
 .servicios{
+    display: flex;
+    flex-direction: column;
     border: solid white 1px;
+    width: 100%;
     border-radius: 20px;
-    width: 320px;
+    width: 90%;
     padding: 15px;
-    margin: 10px;
+    margin: 10px;    
     align-self: center;
 
 }
+
+.lista-servicios{
+    display: inline;
+    margin: 0 auto;
+}
+
 
 .titulos {
     font-size: 1em;
@@ -102,6 +111,7 @@ body{
 }
 
 .linea{
+    margin: 0 auto;
     white-space: nowrap;
     
 }
@@ -110,15 +120,24 @@ a{
     text-decoration: none;
     color: var(--color3);
     font-size: 1rem;
+    white-space: nowrap;
+    margin: 0 auto;
 }
+
 
 @media (min-width: 720px){
 
+    .logo{
+        height: 250px;
+    }
    
 
     .elementos{
         
-        width: 90%;
+        width:90%;
+        min-width:215px;
+        padding: 0px;
+        margin: 0 auto;        
         flex-flow: row;            
         align-items: center;
         justify-content: center; 
@@ -126,6 +145,9 @@ a{
         height:auto;
             
     }
+
+   
+
     
 
 }
